@@ -24,7 +24,7 @@ jobs:
           app-dir: ~/project/addressbook
           cache-path: node_modules
       - run:
-          command: npm test
+          command: npm test --prefix ~/project/addressbook
           name: run jest test
 
 workflows:
