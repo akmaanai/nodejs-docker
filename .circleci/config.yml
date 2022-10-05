@@ -10,7 +10,7 @@ orbs:
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 jobs:
   test:
-    working_directory: ~/
+   
     # Reuse Docker container specification given by the node Orb
     executor: node/default
     steps:
