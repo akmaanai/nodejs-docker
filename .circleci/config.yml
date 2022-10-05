@@ -15,7 +15,6 @@ jobs:
     executor: node/default
     steps:
       - checkout
-      - node/install-npm
       # Install dependencies - the node Orb take care of installation and dependency caching
       - node/install-packages:
           app-dir: ./addressbook
