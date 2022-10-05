@@ -23,9 +23,11 @@ jobs:
       - node/install-packages:
           app-dir: ~/project/addressbook
           cache-path: node_modules
+          override-ci-command: npm i
       - run:
           command: npm test --prefix ~/project/addressbook
           name: run jest test
+
 
 workflows:
   test:
