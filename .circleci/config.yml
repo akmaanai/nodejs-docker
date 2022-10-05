@@ -20,8 +20,6 @@ jobs:
           ls -la 
 
       # Install dependencies - the node Orb take care of installation and dependency caching
-      - node/install-packages:
-          app-dir: ~/project/addressbook
       - run:
           command: npm test --prefix ~/project/addressbook
           name: run jest test
