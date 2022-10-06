@@ -12,7 +12,9 @@ jobs:
   test:
    
     # Reuse Docker container specification given by the node Orb
-    executor: node/default
+    executor: 
+      name: node/default
+      tag: 16.1.1
     steps:
       - checkout
       - run: |
